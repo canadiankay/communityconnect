@@ -1,19 +1,17 @@
 
 import './App.css';
-import Home from './Home/index.js'
-import Mentor from '/MentorDashboard/index.js'
+import { BrowserRouter, Route, Routes } from "react-router-dom";
+import Home from './Home/index'
+import Mentor from './MentorDashboard/index'
 
 function App() {
   return (
-    <div className="App">
-      This is home page
-      <Home />
-
-
-      This is the mentor dashboard 
-      <Mentor />
-
-    </div>
+    <BrowserRouter>
+      <Routes>
+          <Route path="/" element={<Home />} />
+          <Route path="mentor" element={<Mentor />} />
+      </Routes>
+    </BrowserRouter>
   );
 }
 
