@@ -1,0 +1,1 @@
+// component at the bottom of home that will link to mentor info--- login and register
