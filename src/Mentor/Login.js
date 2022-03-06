@@ -26,7 +26,11 @@ const style = {
 
 
 export default function Login() {
-  const [open] = React.useState(true);
+  const [open, setOpen] = React.useState(false);
+  const handleOpen = () => setOpen(true);
+  const handleClose = () => {
+    setOpen(false);
+  };
   const handleSubmit = (event) => {
     event.preventDefault();
     const data = new FormData(event.currentTarget);
@@ -37,10 +41,13 @@ export default function Login() {
     });
   };
   return (
+    <>
+    <Button onClick={handleOpen}>Login</Button>
     <Modal
       aria-labelledby="transition-modal"
       aria-describedby="transition"
       open={open}
+      onClose={handleClose}
       closeAfterTransition
       BackdropComponent={Backdrop}
       BackdropProps={{
@@ -102,5 +109,6 @@ export default function Login() {
         </Box>
       </Fade>
     </Modal>
+    </>
   );
 }

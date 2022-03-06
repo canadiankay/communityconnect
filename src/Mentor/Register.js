@@ -30,8 +30,8 @@ const style = {
 export default function Register() {
   const uploadInputRef = useRef(null);
 
-  const [open, setOpen] = useState(true);
-
+  const [open, setOpen] = useState(false);
+  const handleOpen = () => setOpen(true);
   const handleClose = () => {
     setOpen(false);
   };
@@ -53,9 +53,12 @@ export default function Register() {
     setFile(newValue);
   };
   return (
+    <>
+    <Button onClick={handleOpen}>Register</Button>
     <Modal
       aria-labelledby="transition-modal"
       aria-describedby="transition"
+      open={open}
       onClose={handleClose}
       closeAfterTransition
       BackdropComponent={Backdrop}
@@ -93,7 +96,7 @@ export default function Register() {
               label="Username"
               placeholder="Enter a screen name"
               name="username"
-              autoFocus
+              
             />
             <TextField
               margin="normal"
@@ -103,13 +106,13 @@ export default function Register() {
               label="City"
               placeholder="What city are you from?"
               name="city"
-              autoFocus
+              
             />
             <Box sx={{ textAlign: "center" }}>
               <Typography component="div" variant="body1">
-                What race/ethnicity do you identify a
+                What race/ethnicity do you identify as?
               </Typography>
-              s?
+              
               <FormControlLabel
                 control={<Checkbox value="eth-east-asian" color="primary" />}
                 label="East-Asian"
@@ -141,10 +144,10 @@ export default function Register() {
               <TextField
                 margin="normal"
                 fullWidth
-                id="otherLanguage"
+                id="other-eth"
                 label="Other"
-                name="otherLanguage"
-                autoFocus
+                name="other-eth"
+              
               />
             </Box>
 
@@ -172,23 +175,27 @@ export default function Register() {
               <TextField
                 margin="normal"
                 fullWidth
-                id="otherLanguage"
+                id="other-language"
                 label="Other"
                 name="otherLanguage"
-                autoFocus
               />
             </Box>
-            <Box>
+            <Box sx={{ textAlign: "center" }}>
+            <Typography component="div" variant="body1">
               Please upload a copy of a background check check (completed within
               the last six months):
               <br />
+              <div>
               <input
                 ref={uploadInputRef}
                 type="file"
                 accept="image/*"
+                value={file}
                 style={{ display: "none" }}
                 onChange={onChange}
               />
+              </div>
+              </Typography>
               <Button
                 onClick={() =>
                   uploadInputRef.current && uploadInputRef.current.click()
@@ -197,6 +204,7 @@ export default function Register() {
               >
                 Upload
               </Button>
+
             </Box>
             <TextField
               margin="normal"
@@ -207,7 +215,6 @@ export default function Register() {
               name="email"
               autoComplete="email"
               placeholder="Enter your email"
-              autoFocus
             />
             <TextField
               margin="normal"
@@ -247,5 +254,6 @@ export default function Register() {
         </Box>
       </Fade>
     </Modal>
+    </>
   );
 }
