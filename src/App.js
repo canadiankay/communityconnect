@@ -1,7 +1,8 @@
 
 import './App.css';
 import Home from './Home/index.js'
-import Mentor from '/MentorDashboard/index.js'
+import LoginButton from './Home/LoginButton';
+import Mentor from './MentorDashboard/index'
 
 function App() {
   return (
@@ -10,8 +11,9 @@ function App() {
       <Home />
 
 
-      This is the mentor dashboard 
+      This is the mentor dashboard
       <Mentor />
+      <LoginButton />
 
     </div>
   );
