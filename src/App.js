@@ -1,7 +1,7 @@
 
 import './App.css';
 import Home from './Home/index.js'
-import Mentor from '/MentorDashboard/index.js'
+import Mentor from './MentorDashboard/index.js';
 
 function App() {
   return (
