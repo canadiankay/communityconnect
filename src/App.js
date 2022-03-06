@@ -1,10 +1,13 @@
 import "./App.css";
-import { BrowserRouter, Route, Routes } from "react-router-dom";
+import { BrowserRouter, Route, Routes, Link } from "react-router-dom";
 import UserHome from "./User/index";
 import TaskRequest from "./User/UserRequest";
 import MentorHome from "./Mentor/index";
 import Dashboard from "./Mentor/Dashboard/index";
 import AcceptRequest from "./Mentor/Dashboard/AcceptRequest";
+import { getAuth } from "firebase/auth";
+//import firebaseApp from "./firebase";
+import { useState } from "react";
 
 function App() {
   return (
