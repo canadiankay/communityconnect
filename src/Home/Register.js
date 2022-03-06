@@ -14,15 +14,17 @@ import Typography from "@mui/material/Typography";
 
 const style = {
   position: "absolute",
-  top: "50%",
+  top: "60%",
   left: "50%",
   transform: "translate(-50%, -50%)",
-  width: 400,
+  height: "100%",
+  width: 500,
   bgcolor: "transparent",
   boxShadow: 24,
   p: 2,
   justifyContent: "center",
   flexDirection: "column",
+  overflow:'scroll',
 };
 
 export default function Register(props) {
