@@ -6,9 +6,10 @@
   height:500px;
   width:100%;
   font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+
   
-  position: relative; 
-  width: 375px;
+  position: absolute; 
+  width: 100%;
   height: 812px;
 }
 
@@ -22,5 +23,15 @@
   background: #918FE1;
 }
 
+.task-request {
+    border-radius: 5px;
+    background-color: #00C897;
+    /* padding: 10px; */
+    position: absolute;
+width: 100%;
+height: 1000px;
+left: 22px;
+top: 332px;
+}
 
 
