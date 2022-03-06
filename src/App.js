@@ -14,7 +14,7 @@ function App() {
         <Route path="/request" element={<TaskRequest />} />
         <Route path="mentor" element={<MentorHome />} />
         <Route path="mentor/dashboard" element={<Dashboard />} />
-        <Route path="mentor/dasboard/:id" element={<AcceptRequest />} />
+        <Route path="mentor/assistance" element={<AcceptRequest />} />
       </Routes>
     </BrowserRouter>
   );
