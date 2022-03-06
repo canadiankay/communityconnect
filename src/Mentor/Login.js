@@ -42,7 +42,7 @@ export default function Login() {
   };
   return (
     <>
-    <Button onClick={handleOpen}>Login</Button>
+    <Button variant="outlined" onClick={handleOpen}>Login</Button>
     <Modal
       aria-labelledby="transition-modal"
       aria-describedby="transition"

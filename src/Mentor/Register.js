@@ -16,6 +16,7 @@ const style = {
   position: "absolute",
   top: "60%",
   left: "50%",
+  marginBottom: "10%",
   transform: "translate(-50%, -50%)",
   height: "100%",
   width: 500,
@@ -54,7 +55,7 @@ export default function Register() {
   };
   return (
     <>
-    <Button onClick={handleOpen}>Register</Button>
+    <Button variant="outlined" onClick={handleOpen}>Register</Button>
     <Modal
       aria-labelledby="transition-modal"
       aria-describedby="transition"
