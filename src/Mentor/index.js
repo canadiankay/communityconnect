@@ -2,10 +2,10 @@
 
 import React from 'react'
 
-const Home= () => {
+const MentorHome= () => {
   return (
-    <div>HOME PAGE YALL</div>
+    <div>MENTOR HOME PAGE </div>
   )
 }
 
-export default Home;
+export default MentorHome;
