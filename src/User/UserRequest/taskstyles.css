@@ -1,0 +1,26 @@
+.task-container {
+  display:flexbox;
+  flex-direction: column;
+  align-items: center;
+  background:#F0F4F3;
+  height:500px;
+  width:100%;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  
+  position: relative; 
+  width: 375px;
+  height: 812px;
+}
+
+.rectangle {
+  position: absolute;
+  width: 100%;
+  height: 225px;
+  left: -7px;
+  top: 0px;
+
+  background: #918FE1;
+}
+
+
+
