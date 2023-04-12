@@ -6,7 +6,7 @@ An app built in collobaration with @DevendraChitanna @michealap and @JubzCodes t
 
 Community Connect is an app that has been created #ForThePeople #ByThePeople to make the world a better place for those who typically face mental, physical, emotional, and financial challenges accessing day-to-day support. This app aims to create an online support community where pre-pandemic we could go and access these services outside or ask in-person communities for help.
 
-On March 6, 2022, this app won a small price and was given an honorable mention!
+On March 6, 2022, this app won a small prize and was given an honorable mention!
 
 [App Walkthrough](https://youtu.be/wSzypjJRWYQ)
 
