@@ -1,6 +1,6 @@
 # Community Connect
 
-An app built in collobaration with @DevendraChitanna @michealap and @JubzCodes to tackle barriers and challenges in marginalized communities as per NSBE Feburary 2022 Hackathon. See submission [here](https://devpost.com/software/community-connect-5cjp4m)
+An app built in collobaration with @DevendraChitanna @michealap and @JubzCodes (the LastCodeBenders) to tackle barriers and challenges in marginalized communities as per NSBE February 2022 Hackathon. See submission [here](https://devpost.com/software/community-connect-5cjp4m)
 
 ## Description
 
